@@ -25,8 +25,7 @@
 #    define SPI_MISO_PIN A6
 #    define SPI_MOSI_PIN A7
 
-#    define DRIVER_CS_PINS \
-        { B8, B9 }
+#    define DRIVER_CS_PINS {B8, B9}
 #    define SNLED23751_SPI_DIVISOR 16
 #    define SPI_DRIVER SPID1
 
@@ -34,8 +33,7 @@
 #    define SNLED27351_PHASE_CHANNEL MSKPHASE_12CHANNEL
 
 /* Set LED driver current */
-#    define SNLED27351_CURRENT_TUNE \
-        { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 }
+#    define SNLED27351_CURRENT_TUNE {0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20}
 
 /* Set to infinit, which is use in USB mode by default */
 #    define RGB_MATRIX_TIMEOUT RGB_MATRIX_TIMEOUT_INFINITE
@@ -47,10 +45,14 @@
 
 /* Indications */
 #    define CAPS_LOCK_INDEX 48
-#    define LOW_BAT_IND_INDEX \
-		{ 81, 83 }
+#    define LOW_BAT_IND_INDEX {81, 83}
 
 #    define RGB_MATRIX_KEYPRESSES
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+
+/* Defaults */
+#    define RGB_MATRIX_DEFAULT_SPD 255
+#    define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_TYPING_HEATMAP
+#    define RGB_MATRIX_SOLID_REACTIVE_GRADIENT_MODE
 
 #endif
